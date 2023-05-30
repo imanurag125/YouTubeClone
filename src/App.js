@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Header from "./component/Header";
+import { Provider } from "react-redux";
+import store from "./utils/store";
+import "./index.css";
+import { Outlet, createBrowserRouter } from "react-router-dom";
+import MainContainer from "./component/MainContainer";
+import WatchPage from "./component/WatchPage";
+import Demo from "./component/Demo";
+import Demo2 from "./component/Demo2";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Header />
+      <Outlet />
+    </Provider>
   );
-}
-
-export default App;
+};
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <MainContainer />,
+      },
+      {
+        path: "watch",
+        element: <WatchPage />,
+      },
+      {
+        path: "demo",
+        element: (
+          <div className="flex">
+            <Demo />
+            <Demo2 />
+          </div>
+        ),
+      },
+    ],
+  },
+]);
+// export default <RouterProvider router={appRouter} />;
+export default appRouter;
