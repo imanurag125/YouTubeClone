@@ -1,7 +1,7 @@
 import React from "react";
 const commentData = [
   {
-    name: "Akshay Saini",
+    name: "Ashish Ranjan",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
     replies: [],
   },
@@ -11,45 +11,45 @@ const commentData = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
     replies: [
       {
-        name: "Akshay Saini",
+        name: "Ashu",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
         replies: [],
       },
       {
-        name: "Akshay Saini",
+        name: "Sunny",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
         replies: [
           {
-            name: "Akshay Saini",
+            name: "Rohan",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
             replies: [
               {
-                name: "Akshay Saini",
+                name: "Saini",
                 text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
                 replies: [
                   {
-                    name: "Akshay Saini",
+                    name: "Syam",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
                     replies: [],
                   },
                 ],
               },
               {
-                name: "Akshay Saini",
+                name: "Rohit",
                 text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
                 replies: [],
               },
             ],
           },
           {
-            name: "Akshay Saini",
+            name: "Ash",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
             replies: [],
           },
         ],
       },
       {
-        name: "Akshay Saini",
+        name: "Rohit",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
         replies: [],
       },
@@ -57,7 +57,7 @@ const commentData = [
   },
 
   {
-    name: "Ashish Ranjan",
+    name: "Mukesh",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fuga?",
     replies: [],
   },
